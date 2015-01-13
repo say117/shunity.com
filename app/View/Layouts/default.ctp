@@ -22,8 +22,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+		<?php if ($this->fetch('title_for_layout') != '') echo $this->fetch('title_for_layout') . ' | '; ?>Shunity
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
