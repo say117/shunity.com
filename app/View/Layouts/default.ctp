@@ -52,13 +52,13 @@
                   <span class="icon-bar"></span>
                       </button>
                       <!-- <a href="/" class="navbar-brand logo">Shunity</a> -->
-                      <a href="/" class="navbar-brand"><b style='color:white;'>Shunity</b></a>
+                      <a href="/users/" class="navbar-brand"><b style='color:white;'>Shunity</b></a>
                     </div>
                     <nav class="collapse navbar-collapse" role="navigation">
                     
                     <ul class="nav navbar-nav">
                       <li>
-                        <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
+                        <a href="/users/"><i class="glyphicon glyphicon-home"></i> Home</a>
                       </li>
                       
                     </ul>
