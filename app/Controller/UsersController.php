@@ -15,13 +15,13 @@ class UsersController extends AppController {
         }
 
         if (!$this->Auth->login()) {
-            return $this->Session->setFlash('ユーザー名かパスワードが違います', 'default', array('class' => 'alert danger'));
+            return $this->Session->setFlash('ユーザー名かパスワードが違います', 'default', array('class' => 'alert alert-danger'));
         }
-        $this->setFlashAndRedirect('ログインしました。', '/users/', array('class' => 'alert success'));
+        $this->setFlashAndRedirect('ログインしました。', '/users/', array('class' => 'alert alert-success'));
     }
 
     public function logout() {
-        $this->setFlashAndRedirect('ログアウトしました。', $this->Auth->logout(), array('class' => 'alert success'));
+        $this->setFlashAndRedirect('ログアウトしました。', $this->Auth->logout(), array('class' => 'alert alert-success'));
     }
 
     public function index() {
@@ -37,14 +37,14 @@ class UsersController extends AppController {
                 $this->set('errors', $this->User->validationErrors);
                 return;
             }
-            return $this->Session->setFlash('会員登録に失敗しました', 'default', array('class' => 'alert danger'));
+            return $this->Session->setFlash('会員登録に失敗しました', 'default', array('class' => 'alert alert-danger'));
         }
-        $this->setFlashAndRedirect('会員登録が完了しました', '/', array('class' => 'alert success'));
+        $this->setFlashAndRedirect('会員登録が完了しました', '/', array('class' => 'alert alert-success'));
     }
 
     public function edit($id = null) {
         if ($this->Auth->user('id') != $id) {
-            $this->setFlashAndRedirect('不正なアクセスです', '/users/', array('class' => 'alert danger'));
+            $this->setFlashAndRedirect('不正なアクセスです', '/users/', array('class' => 'alert alert-danger'));
         }
         if (!$this->request->is('post')) {
            return;

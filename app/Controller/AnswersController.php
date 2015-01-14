@@ -23,8 +23,8 @@ class AnswersController extends AppController {
                 $this->set('errors', $this->Answer->validationErrors);
                 return;
             }
-            return $this->Session->setFlash('解答に失敗しました', 'default', array('class' => 'alert danger'));
+            return $this->Session->setFlash('解答に失敗しました', 'default', array('class' => 'alert alert-danger'));
         }
-        $this->setFlashAndRedirect('解答が完了しました', '/', array('class' => 'alert success'));
+        $this->setFlashAndRedirect('解答が完了しました', '/', array('class' => 'alert alert-success'));
     }
 }

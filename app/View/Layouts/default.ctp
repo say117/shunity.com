@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <?php echo $this->Html->css('style'); ?>
+  <?php echo $this->Html->css('styles'); ?>
 </head>
 <body>
   <div class="wrapper">
@@ -20,8 +20,8 @@
               </ul>
 
                 <ul class="nav hidden-xs" id="lg-menu">
-                    <li><a href="/questions"><i class="glyphicon glyphicon-list"></i> 問題に回答する</a></li>
-                    <li><a href="/offers"><i class="glyphicon glyphicon-user"></i> オファーを見る</a></li>
+                    <li><a href="/questions"><i class="glyphicon glyphicon-pencil"></i> 問題に解答する</a></li>
+                    <li><a href="/offers"><i class="glyphicon glyphicon-search"></i> オファーを見る</a></li>
                 </ul>
 
                 <!-- tiny only nav-->
@@ -70,7 +70,7 @@
                         </ul>
                       </li>
                       <li class="dropdown">
-                        <a href="/companies/logout" class="dropdown-toggle" data-toggle="dropdown">ログアウト</a>
+                        <a href="/users/logout" class="dropdown-toggle" data-toggle="dropdown">ログアウト</a>
                         <ul class="dropdown-menu">
                           <li><a href="">More</a></li>
                           <li><a href="">More</a></li>
