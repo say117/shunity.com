@@ -25,6 +25,6 @@ class AnswersController extends AppController {
             }
             return $this->Session->setFlash('解答に失敗しました', 'default', array('class' => 'alert alert-danger'));
         }
-        $this->setFlashAndRedirect('解答が完了しました', '/', array('class' => 'alert alert-success'));
+        $this->setFlashAndRedirect('解答が完了しました', '/users/', array('class' => 'alert alert-success'));
     }
 }

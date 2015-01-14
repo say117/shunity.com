@@ -19,12 +19,12 @@ class OffersController extends AppController {
     public function accept($id) {
         $this->Offer->id = $id;
         $this->Offer->saveField('status', 1);
-        $this->setFlashAndRedirect('オファーへの返答を完了しました', '/', array('class' => 'alert alert-success'));
+        $this->setFlashAndRedirect('オファーへの返答を完了しました', '/users/', array('class' => 'alert alert-success'));
     }
 
     public function reject($id) {
         $this->Offer->id = $id;
         $this->Offer->saveField('status', 2);
-        $this->setFlashAndRedirect('オファーへの返答を完了しました', '/', array('class' => 'alert alert-success'));
+        $this->setFlashAndRedirect('オファーへの返答を完了しました', '/users/', array('class' => 'alert alert-success'));
     }
 }

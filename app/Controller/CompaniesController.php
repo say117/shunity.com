@@ -34,7 +34,7 @@ class CompaniesController extends AppController {
         if (!$this->Auth->login()) {
             return $this->Session->setFlash('ユーザー名かパスワードが違います', 'default', array('class' => 'alert danger'));
         }
-        $this->setFlashAndRedirect('ログインしました。', '/', array('class' => 'alert success'));
+        $this->setFlashAndRedirect('ログインしました。', '/users/', array('class' => 'alert success'));
     }
 
     public function admin_logout() {
