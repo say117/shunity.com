@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Document</title>
+  <title><?php if ($this->fetch('title_for_layout') != '') echo $this->fetch('title_for_layout') . ' | '; ?>Shuniy</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <?php echo $this->Html->css('styles'); ?>
   <?php echo $this->Html->css('top'); ?>
