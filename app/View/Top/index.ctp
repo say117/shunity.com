@@ -4,7 +4,7 @@
 <img class="bg" src="/images/user_top.jpg" alt="" />
 <div id="container">
 
-<img width='60' height='60' src="/images/logo.jpg" class="pull-left" style="margin-right: 15px;">
+<img width='60' height='60' src="/images/logo.png" class="pull-left" style="margin-right: 5px;">
   <h1 style="color:#fff;" class="pull-left">Shunity</h1>
 
 
