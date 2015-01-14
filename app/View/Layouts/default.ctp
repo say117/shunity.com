@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Document</title>
+  <title><?php if ($this->fetch('title_for_layout') != '') echo $this->fetch('title_for_layout') . ' | '; ?>Shuniy</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <?php echo $this->Html->css('styles'); ?>
 </head>
@@ -48,13 +48,13 @@
                   <span class="icon-bar"></span>
                       </button>
                       <!-- <a href="/" class="navbar-brand logo">Shunity</a> -->
-                      <a href="/" class="navbar-brand"><b style='color:white;'>Shunity</b></a>
+                      <a href="/" class="navbar-brand"><b style='color:white;'><img width='25' height='25' src="/images/logo.jpg"> Shunity</b></a>
                     </div>
                     <nav class="collapse navbar-collapse" role="navigation">
                     
                     <ul class="nav navbar-nav">
                       <li>
-                        <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
+                        <a href="/users"><i class="glyphicon glyphicon-home"></i> Home</a>
                       </li>
                       
                     </ul>
