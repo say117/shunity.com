@@ -5,6 +5,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <?php echo $this->Html->css('styles'); ?>
+  <?php echo $this->Html->css('top'); ?>
 </head>
 <body>
   <div class="wrapper">
@@ -38,6 +39,9 @@
             <!-- main right col -->
             <div class="column col-sm-10 col-xs-11" id="main">
 
+              <?php if (empty($user)) { ?>
+
+              <?php } else { ?>
                 <!-- top nav -->
                 <div class="navbar navbar-blue navbar-static-top">
                     <div class="navbar-header">
@@ -83,6 +87,7 @@
                     </nav>
                 </div>
                 <!-- /top nav -->
+                <?php } ?>
 
                 <div class="padding">
                     <div class="full col-sm-9">
